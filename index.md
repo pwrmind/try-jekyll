@@ -4,6 +4,6 @@ title: Blogging Like a Hacker
 
 {{ page.title }}
 
-{% for member in site.data.members %}
-      {{ member.name }}
+{% for site in site.data.sites %}
+      {{ site.name }}
 {% endfor %}
