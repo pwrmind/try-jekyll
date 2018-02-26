@@ -2,4 +2,4 @@
 title: Blogging Like a Hacker
 ---
 
-{{ page.author }}
+{{ page.title }}
