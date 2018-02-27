@@ -12,3 +12,4 @@ markdown: kramdown
 collections:
   sites:
     output: true
+    permalink: /:collection/:path
