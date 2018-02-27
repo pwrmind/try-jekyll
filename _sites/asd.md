@@ -1,5 +1,5 @@
 ---
-layout:
+layout: site
 title: Some site
 ---
 
