@@ -3,17 +3,20 @@ layout: default
 ---
 
 <div>
-  {% if page.title %}
-    <h1 itemprop="name">{{ page.title }}</h1>
-  {% endif %}
+    {% if page.title %}
+        <h1 itemprop="name">{{ page.title }}</h1>
+    {% endif %}
 
-  {% for s in site.sites %}
-    <div>
-      <h2>
-        <a href="{{ s.url | relative_url }}">
-            {{ s.title | escape }}
-        </a>
-      </h2>
-    </div>
-  {% endfor %}
+    <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+    {% for s in site.sites %}
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="{{ s.url | relative_url }}" itemprop="item">
+                <span itemprop="name">{{ s.title | escape }}</span></a>
+            </a>
+        </li>
+    {% endfor %}
+    </ol>
+</ol>
+</ol>
+
 </div>
