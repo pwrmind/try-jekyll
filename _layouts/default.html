@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  <body itemscope="" itemtype="http://schema.org/WebPage">
+	<head>
+		<title>{{ page.title }}</title>
+	</head>
+	<body itemscope="" itemtype="http://schema.org/WebPage">
         {{ content }}
-  </body>
+	</body>
 </html>
