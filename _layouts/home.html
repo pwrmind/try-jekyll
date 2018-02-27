@@ -9,8 +9,11 @@ layout: default
 
   {% for s in site.sites %}
     <div class="site-list">
-      <h2>{{ s.title }}</h2>
-      {{ s.content }}
+      <h2>
+        <a class="site-link" href="{{ s.url | relative_url }}">
+            {{ s.title | escape }}
+        </a>
+      </h2>
     </div>
   {% endfor %}
 </div>
