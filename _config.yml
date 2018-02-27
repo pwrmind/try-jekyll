@@ -11,3 +11,4 @@ markdown: kramdown
 # theme: minima
 collections:
   sites:
+    output: true
