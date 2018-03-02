@@ -9,6 +9,7 @@ lang: ru
 
 # Build settings
 markdown: kramdown
+permalink: pretty
 # theme: minima
 collections:
   events:
