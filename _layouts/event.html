@@ -32,5 +32,10 @@ layout: default
     	<h2 itemprop="name" class="name">{{ page.name }}</h2>
     	<div class="image" style="background-image: url('{{ page.image | relative_url }}')"></div>
     	<div class="description">{{ page.description }}</div>
+    	<div class="microdata">
+            <div itemprop="startDate"></div>
+            <div itemprop="endDate"></div>
+            <div itemprop="location"></div>
+        </div>
     </a>
 </div>
