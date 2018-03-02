@@ -8,10 +8,10 @@ layout: default
     {% endif %}
 
     <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-    {% for event in site.events %}
+    {% for post in site.posts %}
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
             <a href="{{ event.url | relative_url }}" itemprop="item">
-                <span itemprop="name">{{ event.title | escape }}</span></a>
+                <span itemprop="name">{{ post.title | escape }}</span></a>
             </a>
         </li>
     {% endfor %}
