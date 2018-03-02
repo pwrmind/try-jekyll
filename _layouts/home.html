@@ -10,7 +10,7 @@ layout: default
     <ol itemscope itemtype="http://schema.org/BreadcrumbList">
     {% for post in site.posts %}
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <a href="{{ event.url | relative_url }}" itemprop="item">
+            <a href="{{ post.url | relative_url }}" itemprop="item">
                 <span itemprop="name">{{ post.title | escape }}</span></a>
             </a>
         </li>
