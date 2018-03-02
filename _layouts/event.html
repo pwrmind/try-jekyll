@@ -28,7 +28,7 @@ layout: default
             {% endfor %}
         </div>
     </div>
-    <a id="eventBlock" href="{{ relative_url | site.url}}">
+    <a id="eventBlock" href="{{ "/" | relative_url }}">
     	<h2 itemprop="name" class="name">{{ page.name }}</h2>
     	<div class="image" style="background-image: url('{{ page.image | relative_url }}')"></div>
     	<div class="description">{{ page.description }}</div>
